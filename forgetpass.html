@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<br><br>
+<title> Forgot Page </title>
+<link rel="stylesheet" type="text/css" href="Login.css">
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+
+<h1> <center><b> Forgot Password </b> </center> </h1>
+
+<form id="forgotPasswordLink">
+<br><br>
+	
+	<label><b> Email: </b></label><br>
+		&nbsp;&nbsp;&nbsp;<input type="Email" placeholder="Enter Email" id="user" style="height:25px; width:440px;" required><br><br>
+		<label><b> New Password: </b></label><br>
+		&nbsp;&nbsp;&nbsp;<input type="Password" placeholder="Enter Password" id="pass" style="height:25px; width:440px;" required><br><br>
+		<label><b> Confirm Password: </b></label><br>
+		&nbsp;&nbsp;&nbsp;<input type="Password" placeholder="Enter Confirm Password" id="Cpass" style="height:25px; width:440px;" required>
+		
+		<br><br><br>
+		
+	<button type="submit"><b>Submit</b></button><br><br>
+</form>
+<script>
+	document.getElementById("forgotPasswordLink").addEventListener("submit", function(event) {
+    event.preventDefault(); 
+	
+		var email = document.getElementById("user").value;
+		var Password = document.getElementById("pass").value;
+		var ConfirmPassword = document.getElementById("Cpass").value;
+		
+			if (Password !== ConfirmPassword) {
+			alert("Passwords do not match.");
+			return;
+        
+			}
+
+			if (Password.length < 8 && !/[a-z]/.test(Password) && !/[A-Z]/.test(Password)) {
+			alert("Password must be at least 8 characters long and contain both uppercase and lowercase letters.");
+			return;
+       
+			}
+	
+			alert("Successfully change the Password");
+			window.location.href = "Login.html";
+    
+});
+
+</script>
+</body>
+</html>

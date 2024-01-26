@@ -1,0 +1,48 @@
+body{
+	
+	font-family:Arial;
+	background-image:url("image2.jpeg");
+	background-size: cover;
+	
+	background-position:center;
+	background-repeat:no-repeat;
+	height:200%;
+
+}
+
+h1{
+	text-align:center;
+	color:Black;
+	padding:10px;
+	
+}
+
+form{
+	
+	width:500px;
+	margin:0 auto;
+	background-color:white;
+	padding:40px;
+	border-radius:10px;
+	
+}
+
+button[type="submit"]{
+	background-color:green;
+	color:black;
+	width:100%;
+	padding:10px;
+	margin:8px;
+	border:8px;
+	cursor:pointer;
+	border-radius:40px;
+	
+}
+label{
+	font-size:20px;
+	display:black;
+	
+}
+	
+	
+

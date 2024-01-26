@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<br>
+<title> Signup page </title>
+<link rel="stylesheet" type="text/css" href="CSS_Signup.css">
+</head>
+
+<body>
+<h1><center> Sign Up </center></h1>
+<form id="signupform">
+
+	&nbsp;&nbsp;&nbsp;&nbsp; <label><b>Full name:</b></label><br>
+	<center> <input type="text" placeholder="Enter Full name" id="name" style="height:25px; width:450px" required> </center> <br>
+	
+	&nbsp;&nbsp;&nbsp;&nbsp; <label><b> Username:</b></label><br>
+	<center> <input type="text" placeholder="Enter Username" id="username" style="height:25px; width:450px" required> </center> <br>
+
+	&nbsp;&nbsp;&nbsp;&nbsp;<label><b> Email: </b></label><br>
+	<center><input type="text" placeholder="Enter Email" id="email" style="height:25px; width:450px" required> </center> <br>
+
+	&nbsp;&nbsp;&nbsp;&nbsp;<label><b> Password: </b></label><br>
+	<center><input type="Password" placeholder=" Enter Password" id="password" style="height:25px; width:450px" required> </center><br>
+	&nbsp;&nbsp;&nbsp;&nbsp;<label><b> Confirm Password: </b></label><br>
+	<center><input type="Password" placeholder=" Enter Confirm Password" id="confirmPassword" style="height:25px; width:450px" required> </center><br>
+
+		&nbsp;&nbsp;&nbsp;&nbsp;<label> <b> Gender :</b> </label> 
+			<label> Male: <label>
+			<input type="radio" name="Gender" > &nbsp;&nbsp;
+			<label> Female:</label>
+			<input type="radio" name="Gender" > &nbsp;&nbsp;
+			<label> Other:</label>
+			<input type="radio" name="Gender" ><br><br> 
+			
+	&nbsp;&nbsp;&nbsp;&nbsp; <label><input type="checkbox" id="termsCheckbox" required>I accept the </label>
+	<a href="#"> Terms of Use </a>
+	<label> & </label>
+	<a href="#"> Privacy Policy </a><br><br>
+	
+	
+	<button type="Submit" id="loginlink"><b>Sign up</b></button><br><br>
+	
+	<center> <label> Already have an account?</label> 
+	<a href="#" id="loginlink1">Login </a></center>
+</form>
+<script src="Signup.js"> </script>
+</body>
+
+</html>

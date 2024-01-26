@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<br><br>
+<title> Login Page </title>
+<link rel="stylesheet" type="text/css" href="Login.css">
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+
+<h1> <center><b> Login page </b> </center> </h1>
+
+<form id="loginform">
+
+	<center><img src="logo.jpeg"></center>
+	
+	<label><b> Usrename: </b></label><br>
+		&nbsp;&nbsp;<input type="text" placeholder="Enter username" id="user" style="height:25px; width:450px;" required>
+		<i class='bx bxs-user'></i><br><br>
+	
+	<label><b> Password: </b></label><br>
+		&nbsp;&nbsp;<input type="Password" placeholder="Enter Password" id="pass" style="height:25px; width:450px;" required>
+		<i class='bx bxs-lock-alt'></i><br><br>
+	
+	<label><input type="checkbox" required>Remember me </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<a href="#" id="ForgotPasswordLink"> Forget Password</a> <br><br>
+	
+	
+	<button type="submit"><b>Login</b></button><br><br>
+	
+	<center><label> Don't have an account?</label>
+	<a href="#" id="signuplink">Sign up </a></center>
+	
+	
+</form>
+<script src="Login.js"> </script>
+<script>
+	document.getElementById("signuplink").addEventListener("click",function(event){
+	event.preventDefault();
+	window.location.href="Signup.html";
+});
+
+document.getElementById("ForgotPasswordLink").addEventListener("click",function(event){
+	event.preventDefault();
+	window.location.href="Forgetpass.html";
+});
+
+</script>
+</body>
+</html>
